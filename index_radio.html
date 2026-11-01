@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radio types</title>
+    <link rel="stylesheet" href="style_radio.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+          <legend>Please select your preferred contact method:</legend>
+          <div>
+            <input class="a"
+              type="radio"
+              id="contactChoice1"
+              name="contact"
+              value="email"
+              checked />
+            <label for="contactChoice1">Email</label>
+      
+            <input class="a" type="radio" id="contactChoice2" name="contact" value="phone" />
+            <label for="contactChoice2">Phone</label>
+      
+            <input class="a" type="radio" id="contactChoice3" name="contact" value="mail" />
+            <label for="contactChoice3">Mail</label>
+          </div>
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </fieldset>
+      </form>
+      <h3>
+        <p>
+          Choose one
+        </p>
+      
+        <form>
+          <fieldset>
+            <legend> choose your favorite destination </legend>
+            <input type="radio" id="Yogyakarta" name="destination" value="Yogyakarta">
+            <label for="Yogyakarta">Yogyakarta</label>
+            <br>
+            <input type="radio" id="Solo" name="destination" value="Solo">
+            <label for="Solo">Solo</label>
+            <br>
+            <input type="radio" id="Bali" name="destination" value="Bali">
+            <label for="Bali">Bali</label>
+            <input type="range" min="0" max="100" step="1" value="0" style="width: 100px;">
+            <br>
+            <label for="upload">Upload File PDF: </label>
+            <input type="file" id="upload" name="file" accept=".pdf" multiple> 
+            <!-- name, pengelompokan. ngga pake  value krn cuma 1 aja dari value file-->
+            <label for="text, url">pattern</label>
+            <input type="text" pattern="[A-Za-z]{3,10}" placeholder="text" required />
+            <input type="url" name="website" placeholder="url" required pattern="https?://.+">
+            <input type="number" size="6" name="age" min="18" max="99" value="21"><br>
+            <button type="submit">Kirim</button>
+
+        </fieldset>
+
+        <fieldset disabled>
+            <legend>
+              Disable login fieldset
+            </legend>
+            <label for="name">Name: </label>
+            <textarea rows="2" cols="10" name="name" id="name" value="example"></textarea>
+        </fieldset>
+        </form>
+      
+</body>
+</html>
